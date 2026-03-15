@@ -1,3 +1,3 @@
 This is my first Repository.
 <br>
-Author - Harsh Vardhan Tomar(Student @ IPEC)
+Author - Harsh Vardhan Tomar
