@@ -1,1 +1,66 @@
-console.log("Hello, World!");
+// var age=23; // global scope
+// if(true){
+//     console.log(age);
+// }
+
+// function solve(){
+//     var age = 23;
+//     console.log(age);
+// }
+// solve();
+// console.log(age); //error
+
+// var age=12; // Redeclaration of variable
+// var age=34;
+
+// {
+//     let age=24;
+//     console.log(age);
+// }
+
+// {
+//     let age=24;
+// }
+// console.log(age); //error
+
+
+// let a=10;
+// a="babbar";
+// a=null;
+
+// const a=10;
+// a=20;
+// const a;
+// const a=40;
+// console.log(a);
+
+let num=12;
+console.log(typeof(num));
+
+let id1=Symbol("id");
+let id2=Symbol("id");
+if(id1==id2){
+    console.log("hello");
+}
+else{
+    console.log("bye");
+}
+
+let a=3;
+let b=3;
+console.log(a**b);
+
+console.log('5'==5);    //true
+console.log('5'===5); //false
+
+console.log(false || "harsh");
+console.log(false || 1 || 7 || 8);
+
+console.log(2&3);
+console.log(2|3);
+console.log(~3);
+console.log(~0);
+console.log(2^2);
+
+console.log(10>>1);
+console.log(10<<1);
