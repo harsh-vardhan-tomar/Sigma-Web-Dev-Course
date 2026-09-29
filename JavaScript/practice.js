@@ -64,3 +64,73 @@ console.log(2^2);
 
 console.log(10>>1);
 console.log(10<<1);
+
+// for(let i=0;i<=5;i++){
+//     console.log(i);
+// }
+
+// for(let i=5;i>=1;i--){
+//     if(i==3){
+//         break;
+//     }
+//     console.log(i);
+// }
+
+// for(let i=0;i<5;i++){
+//     if(i==3){
+//         continue;
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+// let i=0;
+// while(i<5){
+//     console.log("inside loop");  // infinite loop
+//     if(i==3){ 
+        
+//         continue;
+//     }
+//     else{
+//         console.log(i);
+//         i++;
+//     }   
+// }
+let i=0;
+while(i<5){
+    console.log("inside loop");  
+    if(i==3){ 
+        i++;
+        continue;
+    }
+    else{
+        console.log(i);
+        i++;
+    }   
+}
+let firstName='Santra';
+let middleName="Imli";
+let lastName=`Bye Bye 
+tomar`;
+console.log(lastName);
+
+let fName=new String("Hello my name is Santra");
+console.log(fName);
+console.log(typeof(fName));
+
+console.log(firstName.substring(1,4));
+
+let sentence="hello everyone kaise ho sab";
+let words=sentence.split(' ');
+console.log(words);
+
+let sentence2="hello \"everyone\" kaise ho sab";
+console.log(sentence2);
+
+
+let sentence3="hello\\everyone\\kaise\\h\\o\\sab";
+let words3=sentence3.split('\\');
+console.log(words3);
+console.log(words3.join(','));
+
+
