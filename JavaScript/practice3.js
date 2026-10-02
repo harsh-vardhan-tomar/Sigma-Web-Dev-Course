@@ -103,3 +103,53 @@ console.log(sayHello);
 var sayHello=function(){
     console.log("Namaste !!");
 }
+
+
+console.log(pixel);
+{
+    var pixel=10000;
+}
+console.log(pixel);
+
+
+// Class 
+
+class Human{
+    age=12;
+    #weight=34; // private
+    height=152;
+
+    sayHello(){
+        console.log("Hello Everyone !!");
+    }
+    getWeight(){
+        return this.#weight;
+    }
+    setWeight(wt){
+        this.#weight=wt;
+    }
+}
+let obj=new Human();
+console.log(obj.age);
+obj.sayHello();
+
+obj.setWeight(45);
+let weight=obj.getWeight();
+console.log(weight);
+
+//default parameter
+
+function calculate(value={age:12,wt:45}){
+    console.log("hello there it is ",value);
+}
+calculate();
+calculate(null);      // null value hogi
+calculate(undefined); // default value
+
+function getAge(){
+    return 120;
+}
+function utility(fname="Santra", age=getAge()){
+    console.log("Full Name and age : ",fname," ",age);
+}
+utility();
