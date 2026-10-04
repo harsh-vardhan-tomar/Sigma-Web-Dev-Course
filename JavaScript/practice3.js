@@ -153,3 +153,57 @@ function utility(fname="Santra", age=getAge()){
     console.log("Full Name and age : ",fname," ",age);
 }
 utility();
+
+// Built-in Objects
+// console.log(Math.PI);
+
+// console.log(Math.max(12,54,88,16,987,33,700));
+// console.log(Math.min(12,54,88,16,987,33,700));
+// console.log(Math.round(3.5));
+// console.log(Math.ceil(3.6));
+// console.log(Math.abs(-4.4));
+// console.log(Math.random()); // between 0 and 1
+// console.log(Math.sqrt(625));
+// console.log(Math.pow(2,10));
+
+let curr=new Date();
+console.log(curr);
+// let date = new Date("1972 August 8 5:00");
+let date= new Date(1972,7,8,5); // 0-indexing for month
+console.log(date);
+console.log(date.getDay()); // mon-1, sun-0;
+
+console.log(date.setFullYear(2005));
+console.log(date);
+
+//Object Cloning
+
+let obj2={
+    wt: 120,
+    ht:190,
+    age: 30,
+};
+obj2.color="White";  // dynamic nature of object
+console.log(obj2);
+
+let obj3={
+    val:12,
+    firstName:"santra",
+};
+
+// let obj4={...obj3};  // using spread ... operator
+// obj3.val=14;
+// console.log(obj3);
+// console.log(obj4);
+
+// let obj4=Object.assign({},obj3);
+// console.log(obj4);
+let obj4={
+
+}
+for(let key in obj3){
+    let newKey=key;
+    let newValue=obj3[key];
+    obj4[newKey]=newValue;
+}
+console.log(obj4);
